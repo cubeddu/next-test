@@ -52,7 +52,7 @@ export default function Home(props) {
   return (
     <main>
       <Metatags title="this is a title" />
-      <PostFeed posts={posts} />
+      <PostFeed posts={posts} admin />
 
       {!loading && !postsEnd && <button onClick={getMorePosts}>Load more</button>}
 
